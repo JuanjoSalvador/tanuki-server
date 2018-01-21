@@ -1,0 +1,24 @@
+{
+  "name": "tanuki-server",
+  "version": "0.1.0",
+  "description": "Tanuki Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanjoSalvador/tanuki-server.git"
+  },
+  "author": "Juanjo Salvador",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/JuanjoSalvador/tanuki-server/issues"
+  },
+  "homepage": "https://github.com/JuanjoSalvador/tanuki-server#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "kitsu": "^4.4.0",
+    "moment": "^2.20.1"
+  }
+}
