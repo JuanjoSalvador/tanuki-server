@@ -1,13 +1,16 @@
 const express = require('express')
 const path    = require('path')
 const Kitsu   = require('kitsu')
-const utils = require('./lib/utils.js')
+const utils   = require('./utils/main.js')
+const cors    = require('cors')
 
 const app = express()
 const api = new Kitsu()
 
 const PORT = 8080
 const HOST = '0.0.0.0'
+
+app.use(cors())
 
 app.get('/anime', (req,res) => {
   let params = {
@@ -26,7 +29,6 @@ app.get('/anime', (req,res) => {
     },
     (error) => res.send(error)
   )
-  
 })
 
 app.get('/upcoming', (req,res) => {
