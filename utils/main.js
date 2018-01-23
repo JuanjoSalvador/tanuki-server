@@ -1,6 +1,6 @@
 const moment = require('moment')
 
-const assignWeek = (animeList) => {
+exports.assignWeek = (animeList) => {
   const weekMap = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
 
   let animeWeek = {
@@ -28,5 +28,3 @@ const assignWeek = (animeList) => {
 
   return animeWeek
 }
-
-module.exports = assignWeek
