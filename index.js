@@ -37,7 +37,7 @@ app.get('/upcoming', (req, res) => {
     },
     'sort': 'popularityRank',
     'page': {
-      'limit': 18
+      'limit': 20
     }
   }
 
@@ -57,7 +57,7 @@ app.get('/upcoming/:season', (req, res) => {
     },
     'sort': 'popularityRank',
     'page': {
-      'limit': 18
+      'limit': 20
     }
   }
 
