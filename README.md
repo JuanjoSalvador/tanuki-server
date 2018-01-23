@@ -1,5 +1,6 @@
 [![david badge](https://img.shields.io/david/juanjosalvador/tanuki-server.svg)](https://david-dm.org/juanjosalvador/tanuki-server)
 [![Maintainability](https://api.codeclimate.com/v1/badges/c4c82f9438de71054f55/maintainability)](https://codeclimate.com/github/JuanjoSalvador/tanuki-server/maintainability)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 <p align="center">
     <img src="https://image.flaticon.com/icons/svg/235/235394.svg" width="250" />
