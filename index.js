@@ -69,6 +69,30 @@ app.get('/upcoming/:season', (req, res) => {
   )
 })
 
+app.get('/roulette/:userId', (req, res) => {
+  api.get("/library-entries", {
+    filter: {
+      'userId': req.params.userId,
+      'status': "planned",
+      'kind': "anime"
+    },
+    page: {
+        limit: 50
+    }
+  }).then(
+    (response) => {
+      let rndIndex = Math.floor(Math.random() * (response.data.length - 0 + 1) + 0)
+      let anime = `library-entries/${response.data[rndIndex].id}/anime`
+
+      api.get(anime, {}).then(
+        (response) => {
+          res.send(response)
+        }
+      )
+    }
+  )
+})
+
 app.post('/export', (req, res) => {
   let response = api.get('anime')
   res.send(response)

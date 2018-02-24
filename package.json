@@ -4,7 +4,8 @@
   "description": "Tanuki Server",
   "main": "index.js",
   "scripts": {
-    "test": "standard"
+    "test": "standard",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -17,12 +18,12 @@
   },
   "homepage": "https://github.com/JuanjoSalvador/tanuki-server#readme",
   "dependencies": {
-    "cors": "^2.8.4",
     "express": "^4.16.2",
     "kitsu": "^4.4.0",
     "moment": "^2.20.1"
   },
   "devDependencies": {
-    "standard": "^10.0.3"
+    "standard": "^10.0.3",
+    "cors": "^2.8.4"
   }
 }
