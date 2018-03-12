@@ -19,11 +19,11 @@
   "homepage": "https://github.com/JuanjoSalvador/tanuki-server#readme",
   "dependencies": {
     "express": "^4.16.2",
-    "kitsu": "^4.4.0",
+    "kitsu": "^5.0.6",
     "moment": "^2.20.1"
   },
   "devDependencies": {
-    "standard": "^10.0.3",
+    "standard": "^11.0.0",
     "cors": "^2.8.4"
   }
 }
